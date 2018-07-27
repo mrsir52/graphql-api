@@ -1,0 +1,14 @@
+# import Post from "./generated/prisma.graphql"
+type User {
+  id: String
+  name: String
+  height: String
+  homeworld: String
+  url: String
+}
+
+type Query {
+  users: User!
+  user(id: ID): User
+}
+
